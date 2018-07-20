@@ -1,0 +1,15 @@
+.header {
+    background-color: $primaryColor;
+    padding: 15px 25px;
+    &__nav {
+        padding: 0;
+        &__tab {
+            display: inline-block;
+            color: $white;
+            padding: 0 10px;
+            &:hover {
+                color: $accentColor;
+            }
+        }
+    }
+}

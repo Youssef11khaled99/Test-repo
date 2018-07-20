@@ -1,0 +1,15 @@
+.footer {
+    background-color: $primaryColor;
+    padding: 15px 25px;
+    margin-left: -15px;
+    &__caption {
+        color: $white;
+    }
+    &__icons {
+        margin: 0;
+    }
+    &__icon {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}

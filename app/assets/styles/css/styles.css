@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Work+Sans");
+body,
+html {
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.font-header {
+  font-family: "Work Sans", sans-serif; }
+
+.font-content {
+  font-family: "Bitter", serif; }
+
+.font-12 {
+  font-size: 12px; }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-16 {
+  font-size: 16px; }
+
+.font-20 {
+  font-size: 20px; }
+
+.font-24 {
+  font-size: 24px; }
+
+.font-36 {
+  font-size: 36px; }
+
+.font-42 {
+  font-size: 42px; }
+
+.font-76 {
+  font-size: 76px; }
+
+.font-semi-bold {
+  font-weight: 500; }
+
+.font-bold {
+  font-weight: 700; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .wrapper--space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.header {
+  background-color: #821946;
+  padding: 15px 25px; }
+  .header__nav {
+    padding: 0; }
+    .header__nav__tab {
+      display: inline-block;
+      color: white;
+      padding: 0 10px; }
+      .header__nav__tab:hover {
+        color: #b4784b; }
+
+.hero {
+  background-image: url("https://media.wired.com/photos/5ab16485adec2c73584304fa/master/pass/Model-3---Red-Rear-Sunset.jpg");
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .hero__content {
+    z-index: 2;
+    text-align: center;
+    color: white; }
+    .hero__content h2 {
+      margin: 0; }
+
+.footer {
+  background-color: #821946;
+  padding: 15px 25px;
+  margin-left: -15px; }
+  .footer__caption {
+    color: white; }
+  .footer__icons {
+    margin: 0; }
+  .footer__icon {
+    display: inline-block;
+    margin: 0 5px; }

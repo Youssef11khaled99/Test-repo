@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Work+Sans');
+.font {
+    &-header {
+        font-family: $headerFont;
+    }
+    &-content {
+        font-family: $contentFont;
+    }
+    &-12 {
+        font-size: 12px;
+    }
+    &-14 {
+        font-size: 14px;
+    }
+    &-16 {
+        font-size: 16px;
+    }
+    &-20 {
+        font-size: 20px;
+    }
+    &-24 {
+        font-size: 24px;
+    }
+    &-36 {
+        font-size: 36px;
+    }
+    &-42 {
+        font-size: 42px;
+    }
+    &-76 {
+        font-size: 76px;
+    }
+    &-semi-bold {
+        font-weight: 500;
+    }
+    &-bold {
+        font-weight: 700;
+    }
+}
