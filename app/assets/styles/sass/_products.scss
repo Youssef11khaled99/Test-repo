@@ -1,7 +1,30 @@
 .products {
+    &__title {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+        background: rgb(130, 25, 70);
+        color: white;
+        z-index: 0;
+        position: relative;
+        padding-bottom: 10px;
+        bottom: 10px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
+        justify-items: center;
+        grid-gap: 20px;
+    }
+    &__item {
+        border: 5px solid black;
+        text-align: center;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }

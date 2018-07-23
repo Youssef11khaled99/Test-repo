@@ -1,6 +1,11 @@
 .header {
     background-color: $primaryColor;
     padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
     &__nav {
         padding: 0;
         &__tab {

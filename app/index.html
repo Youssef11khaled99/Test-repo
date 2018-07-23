@@ -11,27 +11,28 @@
 
     <header class="header">
         <div class="wrapper wrapper--space-between">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png" width="70" alt="logo" class="header__logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png" width="70"
+                alt="logo" class="header__logo">
             <nav>
                 <ul class="header__nav font-header font-20 font-semi-bold">
                     <li class="header__nav__tab">
-                        <a href="#">Home</a>
+                        <a href="#home" data-link="home">Home</a>
                     </li>
                     <li class="header__nav__tab">
-                        <a href="#">About</a>
+                        <a href="#about" data-link="about">About</a>
                     </li>
                     <li class="header__nav__tab">
-                        <a href="#">Products</a>
+                        <a href="#products" data-link="products">Products</a>
                     </li>
                     <li class="header__nav__tab">
-                        <a href="#">Contact Us</a>
+                        <a href="#contact-us" data-link="contact-us">Contact Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="home">
         <div class="hero">
             <div class="hero__blur"></div>
             <div class="hero__content font-header font-bold">
@@ -44,27 +45,64 @@
                 </svg>
             </div>
         </div>
-        <section class="section about">
+        <section id="about" class="section about">
             <div class="wrapper">
                 <h2 class="about__title font-header font-bold font-42">About Us</h2>
-                <p class="about__content font-content font-20 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium exercitationem dicta adipisci sapiente enim autem quidem minima, tenetur nobis at quaerat doloremque non dignissimos itaque nemo nisi? Natus, atque.</p>
+                <p class="about__content font-content font-20 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium exercitationem dicta adipisci
+                    sapiente enim autem quidem minima, tenetur nobis at quaerat doloremque non dignissimos itaque nemo nisi?
+                    Natus, atque.</p>
             </div>
         </section>
-        <section class="section section--alt products">
+        <section id="products" class="section section--alt products">
             <div class="wrapper">
+                <h2 class="products__title font-header font-bold font-32">Our Products</h2>
                 <div class="products__grid">
-                    <div class="products__item">basd</div>
-                    <div class="products__item">sdga</div>
-                    <div class="products__item">asdfg</div>
-                    <div class="products__item">asdf</div>
-                    <div class="products__item">asdf</div>
-                    <div class="products__item">asdf</div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
+                    <div class="products__item">
+                        <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section contact-us">
+        <section id="contact-us" class="section contact-us">
             <div class="wrapper">
-
+                <h2 class="contact-us__title font-header font-bold font font-32">Contact Us</h2>
+                <div class="contact-us__content">
+                    <div>
+                        <h2 class="font-24 font-bold font-header">Our Compnay Info</h2>
+                        <p class="font-16 font-content">
+                            <img class="contact-us__icon" src="./assets/images/placeholder.svg" width="16" height="16" alt=""> Elephant Road, Dhaka 1205, London </p>
+                        <p class="font-16 font-content">
+                            <img class="" src="./assets/images/placeholder.svg" width="16" height="16" alt=""> + 8801532-987039 </p>
+                        <p class="font-16 font-content">
+                            <img class="" src="./assets/images/placeholder.svg" width="16" height="16" alt=""> Youremail@mail.com</p>
+                        <div id="map" style="width:100%;height:200px"></div>
+                    </div>
+                    <form class="contact-us__form">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                        <textarea class="contact-us__form__message" name="message" id="message" cols="30" rows="10" required></textarea>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -92,6 +130,8 @@
         </div>
     </footer>
     <script src="./assets/scripts/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS9AGR-TSyZdGMwCgTbAfb-US-9gA9-ZM&callback=myMap"></script>
+
 </body>
 
 </html>
