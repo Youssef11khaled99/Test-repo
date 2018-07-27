@@ -1,8 +1,12 @@
 const btns = document.querySelectorAll('.header__nav__tab a');
 
+// Smooth Scroll
+
 function smoothScroll(e) {
     e.preventDefault();
-    const targetCoords = document.querySelector(`#${e.target.dataset.link}`).getBoundingClientRect();
+    const targetCoords = document
+        .querySelector(`#${e.target.dataset.link}`)
+        .getBoundingClientRect();
 
     window.scroll({
         top: targetCoords.y,
@@ -11,13 +15,13 @@ function smoothScroll(e) {
     });
 }
 
-btns.forEach(btn => btn.addEventListener('click', smoothScroll));
+btns.forEach((btn) => btn.addEventListener('click', smoothScroll));
 
 // Google Map js implemention
 
 function myMap() {
-    var mapCanvas = document.getElementById("map");
-    var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+    var mapCanvas = document.getElementById('map');
+    var myCenter = new google.maps.LatLng(51.508742, -0.12085);
     var mapOptions = {
         center: myCenter,
         zoom: 5
@@ -32,20 +36,31 @@ function myMap() {
 // nav-bar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById('navbar').style.top = '0';
+    } else {
+        document.getElementById('navbar').style.top = '-50px';
+    }
+    prevScrollpos = currentScrollPos;
+};
+
 // Responsive navbar
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var x = document.getElementById('myTopnav');
+    if (x.className === 'topnav') {
+        x.className += ' responsive';
     } else {
-        x.className = "topnav";
+        x.className = 'topnav';
     }
 }
+
+// Products Slide
+
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
+});
