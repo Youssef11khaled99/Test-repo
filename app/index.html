@@ -13,7 +13,7 @@
         <div class="wrapper wrapper--space-between">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png" width="70"
                 alt="logo" class="header__logo">
-            <nav>
+            <nav id="navbar">
                 <ul class="header__nav font-header font-20 font-semi-bold">
                     <li class="header__nav__tab">
                         <a href="#home" data-link="home">Home</a>
@@ -29,6 +29,12 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+                <a href="#" id="about2">About</a>
+                <a href="#" id="blog">Blog</a>
+                <a href="#" id="projects">Projects</a>
+                <a href="#" id="contact">Contact</a>
         </div>
     </header>
 
@@ -93,14 +99,48 @@
                             <img class="" src="./assets/images/placeholder.svg" width="16" height="16" alt=""> + 8801532-987039 </p>
                         <p class="font-16 font-content">
                             <img class="" src="./assets/images/placeholder.svg" width="16" height="16" alt=""> Youremail@mail.com</p>
-                        <div id="map" style="width:100%;height:200px"></div>
+                        <div id="map" style="width:100%;height:362px"></div>
                     </div>
                     <form class="contact-us__form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <input type="tel" name="phone" placeholder="Phone Number">
-                        <textarea class="contact-us__form__message" name="message" id="message" cols="30" rows="10" required></textarea>
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <div class="input-title">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" id="name" name="name" placeholder="Your name..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-title">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" id="email" name="email" placeholder="Your email..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-title">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" id="subject" name="subject" placeholder="Your subject..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-title">
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <div class="input-place">
+                                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -109,7 +149,7 @@
 
     <footer class="footer">
         <div class="wrapper wrapper--space-between">
-            <span class="footer__caption font-bold font-header">Copyright © 2018 Life Tissues Factory All rights reserved</span>
+           <span class="footer__caption font-bold font-header">Copyright © 2018 Life Tissues Factory All rights reserved</span>
             <ul class="footer__icons">
                 <li class="footer__icon">
                     <img src="./assets/images/facebook-logo.svg" width="35" height="35">
