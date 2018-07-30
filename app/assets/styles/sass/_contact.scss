@@ -8,12 +8,8 @@
         grid-gap: 20px;
     }
     &__form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
         width: 80%;
         padding: 12px;
-        border: 1px solid #ccc;
         border-radius: 4px;
         &__message {
             grid-column: 1 / span 2;
@@ -25,32 +21,8 @@
     &__icon {
         vertical-align: text-top;
     }
-    input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-      
-    label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    }
-      
-    input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    }
 
-    input[type=submit]:hover {
-        background-color: #45a049;
-    }
+    
     
     &__form-container {
         border-radius: 5px;
@@ -58,24 +30,18 @@
         padding: 0;
       }
     
-    &__input-title {
-    float: left;
-    widows: 20vw;
-    margin-top: 6px;
-    
+    &__input-title { 
+        margin-top: 6px;
     }
     
     &__input-place {
-    float: left;
-    width: 30vw;
-    margin-top: 6px;
+        margin-top: 6px;
+        flex: 1;
     }
     
-    /* Clear floats after the columns */
-    &__row:after {
-    content: "";
-    display: table;
-    clear: both;
+    &__row {
+    display: flex;
+    
     }
 
     /* To make the form responsive*/

@@ -1,5 +1,5 @@
 .header {
-    background-color: $primaryColor;
+    background-color: transparent;
     padding: 15px 25px;
     position: fixed;
     top: 0;
@@ -22,11 +22,13 @@
             top: 2%; /* Stay on top */
             width: 100%; /* Full width */
             transition: top 0.3s;
+            
         }
         #navbar ul {
             float: right;
             padding-right: 80px;
         }
+        
         #navbar a:hover {
             border-bottom: 3px solid #fc9494;
         }

@@ -2,6 +2,8 @@
 @import 'variables';
 @import 'global';
 @import 'fonts';
+// Packages
+@import 'swiper';
 // BLOCKS
 @import 'wrapper';
 @import 'header';
@@ -11,4 +13,6 @@
 @import 'about';
 @import 'products';
 @import 'contact';
+@import 'input';
 @import 'footer';
+

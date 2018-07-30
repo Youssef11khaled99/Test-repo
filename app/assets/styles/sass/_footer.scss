@@ -1,9 +1,10 @@
 .footer {
-    background-color: $primaryColor;
+    background-color:#3d0014 ;
     padding: 15px 25px;
     margin-left: -15px;
     &__caption {
-        color: $white;
+        color: #747474;
+        font-size: 12px;
     }
     &__icons {
         margin: 0;
@@ -13,3 +14,6 @@
         margin: 0 5px;
     }
 }
+   
+      
+         
