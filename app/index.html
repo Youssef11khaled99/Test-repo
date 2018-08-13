@@ -147,44 +147,20 @@
                         <div id="map" style="width:100%;height:362px"></div>
                     </div>
                     <form class="contact-us__form" action="/action_page.php"> 
-                        <div class="contact-us__form-container">
-            
-                            <div class="contact-us__row">
-                                <div class="contact-us__input-title">
-                                    <label for="name">Name</label>
-                                </div>
-                                <div class="contact-us__input-place">
-                                    <input type="text" id="name" name="name" placeholder="Your name..">
-                                </div>
+                        <div class="contact-us-wrapper">
+                            <div class="contact-form">
+                              <div class="input-fields">
+                                <input type="text" class="input" placeholder="Name">
+                                <input type="email" class="input" placeholder="Email Address">
+                                <input type="tel" class="input" placeholder="Phone">
+                                <input type="text" class="input" placeholder="Subject">
+                              </div>
+                              <div class="msg">
+                                <textarea placeholder="Message"></textarea>
+                                <input type="submit" value="Send">
+                              </div>
                             </div>
-                            <div class="contact-us__row">
-                                <div class="contact-us__input-title">
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="contact-us__input-place">
-                                    <input type="text" id="email" name="email" placeholder="Your email..">
-                                </div>
-                            </div>
-                            <div class="contact-us__row">
-                                <div class="contact-us__input-title">
-                                    <label for="subject">Subject</label>
-                                </div>
-                                <div class="contact-us__input-place">
-                                    <input type="text" id="subject" name="subject" placeholder="Your subject..">
-                                </div>
-                            </div>
-                            <div class="contact-us__row">
-                                <div class="contact-us__input-title">
-                                    <label for="message">Message</label>
-                                </div>
-                                <div class="contact-us__input-place">
-                                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                                </div>
-                            </div>
-                            <div class="contact-us__row">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </div>
+                          </div>	
                     </form> 
                 </div>
             </div>
