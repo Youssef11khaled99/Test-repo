@@ -96,16 +96,20 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50; }
+  z-index: 50;
+  transition: all 0.2s ease-in-out; }
   .header__nav {
     padding: 0;
     /* nav-bar css*/ }
     .header__nav__tab {
       display: inline-block;
       color: white;
-      padding: 0 10px; }
+      padding: 0 10px;
+      text-shadow: 0px 2px 6px black;
+      transition: all 0.2s ease-in; }
       .header__nav__tab:hover {
-        color: #b4784b; }
+        color: #821946;
+        text-shadow: 0px 2px 20px white; }
     .header__nav #navbar {
       position: fixed;
       /* Make it stick */
@@ -119,6 +123,13 @@ a {
       padding-right: 80px; }
     .header__nav #navbar a:hover {
       border-bottom: 3px solid #fc9494; }
+  .header--alt {
+    background-color: #821946; }
+    .header--alt .header__nav__tab {
+      text-shadow: none;
+      transition: all 0.2s ease-in; }
+      .header--alt .header__nav__tab:hover {
+        color: #b4784b; }
 
 .hero {
   background-color: #ffffff;
@@ -196,11 +207,16 @@ a {
 
 .products__item {
   cursor: pointer;
-  border: 5px solid rgba(0, 0, 0, 0.6);
+  border: 5px solid rgba(180, 120, 75, 0.7);
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
-  position: relative; }
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  .products__item:hover {
+    border: 5px solid rgba(130, 25, 70, 0.7); }
+    .products__item:hover .products__item__name {
+      background-color: rgba(130, 25, 70, 0.7); }
   .products__item img {
     width: 100%;
     object-fit: cover; }
@@ -211,10 +227,11 @@ a {
     position: absolute;
     text-align: center;
     margin: 0 auto;
-    background-color: rgba(180, 120, 75, 0.8);
+    background-color: rgba(180, 120, 75, 0.5);
     color: white;
     padding: 10px 30px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out; }
 
 .contact-us__title {
   text-align: center; }
@@ -313,14 +330,73 @@ input[type=submit]:hover {
   background-color: #45a049; }
 
 .footer {
-  background-color: #3d0014;
+  background-color: #821946;
   padding: 15px 25px;
   margin-left: -15px; }
   .footer__caption {
-    color: #747474;
+    color: white;
     font-size: 12px; }
   .footer__icons {
     margin: 0; }
   .footer__icon {
     display: inline-block;
     margin: 0 5px; }
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+  .modal__close {
+    font-family: sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+    user-select: none; }
+    .modal__close:hover {
+      color: #b4784b; }
+  .modal__card {
+    background: white;
+    border-radius: 20px;
+    height: 500px;
+    width: 50%;
+    min-width: 450px;
+    padding: 20px 25px; }
+    .modal__card__title {
+      margin-top: 0;
+      text-align: center;
+      font-family: "Work Sans", sans-serif; }
+    .modal__card__img {
+      width: 100%;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      overflow: hidden; }
+      .modal__card__img img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+        object-position: center; }
+    .modal__card__desc__row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px;
+      width: 80%;
+      margin: 0 auto;
+      font-family: "Bitter", serif; }

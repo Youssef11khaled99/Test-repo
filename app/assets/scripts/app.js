@@ -1,16 +1,20 @@
-const btns = document.querySelectorAll('.header__nav__tab a');
-
 // Smooth Scroll
+const btns = document.querySelectorAll('.header__nav__tab a');
 
 function smoothScroll(e) {
     e.preventDefault();
-    const targetCoords = document
-        .querySelector(`#${e.target.dataset.link}`)
-        .getBoundingClientRect();
+    // const targetCoords = document
+    //     .querySelector(`#${e.target.dataset.link}`)
+    //     .getBoundingClientRect();
 
-    window.scroll({
-        top: targetCoords.y,
-        left: 0,
+    // window.scroll({
+    //     top: targetCoords.y,
+    //     left: 0,
+    //     behavior: 'smooth'
+    // });
+
+    // Scroll to a certain element
+    document.querySelector(`#${e.target.dataset.link}`).scrollIntoView({
         behavior: 'smooth'
     });
 }
@@ -47,6 +51,19 @@ window.onscroll = function() {
 
 // Responsive navbar
 
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 600 ||
+        document.documentElement.scrollTop > 600
+    ) {
+        document.getElementById('header').classList.add('header--alt');
+    } else {
+        document.getElementById('header').classList.remove('header--alt');
+    }
+}
+
+window.addEventListener('scroll', scrollFunction);
+
 // Products Slide
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -57,3 +74,19 @@ var mySwiper = new Swiper('.swiper-container', {
     }
 });
 
+// Modal
+
+const products = document.querySelectorAll('.products__item');
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.modal__close');
+
+function openModal(e) {
+    modal.classList.add('modal--is-visible');
+}
+
+function closeModal() {
+    modal.classList.remove('modal--is-visible');
+}
+
+products.forEach((product) => product.addEventListener('click', openModal));
+closeBtn.addEventListener('click', closeModal);

@@ -6,14 +6,19 @@
     left: 0;
     right: 0;
     z-index: 50;
+    transition: all 0.2s ease-in-out;
+
     &__nav {
         padding: 0;
         &__tab {
             display: inline-block;
             color: $white;
             padding: 0 10px;
+            text-shadow: 0px 2px 6px black;
+            transition: all 0.2s ease-in;
             &:hover {
-                color: $accentColor;
+                color: $primaryColor;
+                text-shadow: 0px 2px 20px $white;
             }
         }
         /* nav-bar css*/
@@ -22,15 +27,27 @@
             top: 2%; /* Stay on top */
             width: 100%; /* Full width */
             transition: top 0.3s;
-            
         }
         #navbar ul {
             float: right;
             padding-right: 80px;
         }
-        
+
         #navbar a:hover {
             border-bottom: 3px solid #fc9494;
+        }
+    }
+
+    &--alt {
+        background-color: $primaryColor;
+        .header__nav {
+            &__tab {
+                text-shadow: none;
+                transition: all 0.2s ease-in;
+                &:hover {
+                    color: $accentColor;
+                }
+            }
         }
     }
 }

@@ -10,11 +10,11 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper wrapper--space-between">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png" width="70" alt="logo" class="header__logo">
             <nav id="navbar">
-                <ul class="header__nav font-header font-20 font-semi-bold">
+                <ul class="header__nav font-header font-24 font-semi-bold">
                     <li class="header__nav__tab">
                         <a href="#home" data-link="home">Home</a>
                     </li>
@@ -32,8 +32,8 @@
         </div>
     </header>
 
-    <main id="home">
-        <div class="hero">
+    <main>
+        <div class="hero" id="home">
             <div class="hero__blur"></div>
             <div class="hero__content font-header font-bold">
                 <h2 class="font-76">Welcome</h2>
@@ -125,6 +125,14 @@
                                 <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
                                 <p class="products__item__name font-20 font-content font-semi-bold">Tissue</p>
                             </div>
+                            <div class="products__item">
+                                <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                                <p class="products__item__name font-20 font-content font-semi-bold">Tissue</p>
+                            </div>
+                            <div class="products__item">
+                                <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+                                <p class="products__item__name font-20 font-content font-semi-bold">Tissue</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,7 +155,7 @@
                         <div id="map" style="width:100%;height:362px"></div>
                     </div>
                     <div>
-                        <form class="contact-us__form" action="/action_page.php"> 
+                        <form class="contact-us__form" action="/action_page.php">
                             <div class="contact-us__form-container">
 
                                 <div class="contact-us__row">
@@ -185,13 +193,13 @@
                                         <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                                     </div>
                                 </div>
-                                
+
                                 <div class="contact-us__row">
                                     <input type="submit" value="Submit">
                                 </div>
                             </div>
-                        </form> 
-                </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -219,6 +227,37 @@
             </ul>
         </div>
     </footer>
+    <div class="modal">
+        <span class="modal__close">X</span>
+        <div class="modal__card">
+            <h2 class="modal__card__title">Tissue</h2>
+            <div class="modal__card__img">
+                <img src="http://queenex.ae/wp-content/uploads/2015/09/c-fold-img-340x177.jpg" alt="">
+            </div>
+            <div class="modal__card__desc">
+                <p class="modal__card__desc__row">
+                    <span>Weight:</span>
+                    <span>2.5Kg</span>
+                </p>
+                <p class="modal__card__desc__row">
+                    <span>Weight:</span>
+                    <span>2.5Kg</span>
+                </p>
+                <p class="modal__card__desc__row">
+                    <span>Weight:</span>
+                    <span>2.5Kg</span>
+                </p>
+                <p class="modal__card__desc__row">
+                    <span>Weight:</span>
+                    <span>2.5Kg</span>
+                </p>
+                <p class="modal__card__desc__row">
+                    <span>Weight:</span>
+                    <span>2.5Kg</span>
+                </p>
+            </div>
+        </div>
+    </div>
     <script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
     <script src="./assets/scripts/app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS9AGR-TSyZdGMwCgTbAfb-US-9gA9-ZM&callback=myMap"></script>
