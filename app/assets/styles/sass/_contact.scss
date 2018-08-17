@@ -9,7 +9,6 @@
         grid-gap: 20px;
     }
     &__form {
-        width: 80%;
         padding: 12px;
         border-radius: 4px;
         &__message {
@@ -47,6 +46,13 @@
         margin-top: 6px;
         flex: 1;
     }
+    &__row {
+        padding: 0 20px;
+        &--btn {
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
 
 }
  /* To make the form responsive*/ 
@@ -61,25 +67,4 @@
         }
     } 
 
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical; }
-    
-    label {
-      padding: 12px 12px 12px 0;
-      display: inline-block; }
-    
-    input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      margin: 0 auto; }
-    
-    input[type=submit]:hover {
-      background-color: #45a049; }
+   
