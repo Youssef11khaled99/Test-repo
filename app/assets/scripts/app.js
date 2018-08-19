@@ -51,6 +51,19 @@ window.onscroll = function() {
 
 // Responsive navbar
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("body").style.marginLeft = "150px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("body").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+
+
 function scrollFunction() {
     if (
         document.body.scrollTop > 600 ||

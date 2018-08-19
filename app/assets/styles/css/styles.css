@@ -123,6 +123,45 @@ a {
       padding-right: 80px; }
     .header__nav #navbar a:hover {
       border-bottom: 3px solid #fc9494; }
+  .header .hidden {
+    display: none; }
+  .header .sidenav {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; }
+  .header .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  .header .sidenav a:hover {
+    color: #f1f1f1; }
+  .header .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+  @media screen and (max-height: 600px) {
+    .header .hidden {
+      display: inline; }
+    .header .mainNav {
+      display: none; }
+    .header .sidenav {
+      padding-top: 15px; }
+    .header .sidenav a {
+      font-size: 18px; } }
   .header--alt {
     background-color: #821946; }
     .header--alt .header__nav__tab {

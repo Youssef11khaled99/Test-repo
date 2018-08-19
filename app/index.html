@@ -8,26 +8,36 @@
     <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
 </head>
 
-<body>
+<body id="body">
 
     <header class="header" id="header">
         <div class="wrapper wrapper--space-between">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png" width="70" alt="logo" class="header__logo">
             <nav id="navbar">
-                <ul class="header__nav font-header font-24 font-semi-bold">
-                    <li class="header__nav__tab">
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="#home" data-link="home">Home</a>
-                    </li>
-                    <li class="header__nav__tab">
                         <a href="#about" data-link="about">About</a>
-                    </li>
-                    <li class="header__nav__tab">
                         <a href="#products" data-link="products">Products</a>
-                    </li>
-                    <li class="header__nav__tab">
                         <a href="#contact-us" data-link="contact-us">Contact Us</a>
-                    </li>
-                </ul>
+                </div>
+                <div class="mainNav">
+                    <ul class="header__nav font-header font-24 font-semi-bold">
+                        <li class="header__nav__tab">
+                            <a href="#home" data-link="home">Home</a>
+                        </li>
+                        <li class="header__nav__tab">
+                            <a href="#about" data-link="about">About</a>
+                        </li>
+                        <li class="header__nav__tab">
+                            <a href="#products" data-link="products">Products</a>
+                        </li>
+                        <li class="header__nav__tab">
+                            <a href="#contact-us" data-link="contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="hidden" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
             </nav>
         </div>
     </header>
@@ -210,19 +220,29 @@
             <span class="footer__caption font-bold font-header">Copyright © 2018 Life Tissues Factory All rights reserved</span>
             <ul class="footer__icons">
                 <li class="footer__icon">
-                    <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    <a href="https://www.facebook.com/Company-ELNile-367149003386066/">
+                        <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    </a>
                 </li>
                 <li class="footer__icon">
-                    <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    <a href="https://www.facebook.com/Company-ELNile-367149003386066/">
+                        <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    </a>
                 </li>
                 <li class="footer__icon">
-                    <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    <a href="https://www.facebook.com/Company-ELNile-367149003386066/">
+                        <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    </a>
                 </li>
                 <li class="footer__icon">
-                    <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    <a href="https://www.facebook.com/Company-ELNile-367149003386066/">
+                        <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    </a>
                 </li>
                 <li class="footer__icon">
-                    <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    <a href="https://www.facebook.com/Company-ELNile-367149003386066/">
+                        <img src="./assets/images/facebook-logo.svg" width="35" height="35">
+                    </a>
                 </li>
             </ul>
         </div>
