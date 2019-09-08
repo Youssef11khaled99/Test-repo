@@ -24,6 +24,7 @@
         "sass-module-importer": "^1.4.0"
     },
     "dependencies": {
+        "default": "^0.1.1",
         "postinstall": "^0.5.1",
         "swiper": "^4.5.0"
     }
